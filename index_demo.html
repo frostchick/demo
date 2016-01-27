@@ -1,159 +1,381 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>SB Admin - Bootstrap Admin Template</title>
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="css/components.css" rel="stylesheet">
-	<link href="css/plugins/slider/style.css" rel="stylesheet"/>
-	
-    <!-- Custom Fonts -->
-    <link href="css/fonts/themify-icons.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
-</head>
-<body>
-    <div id="wrapper_page"> 
-        <!-- Heading top -->
-        <header class="header-style-default">
-            <div class="container">
-                <span class="text-right header-title"><i class="ti-help-alt"></i> Hỏi Đáp </span>
-                <span class="text-right header-title"><i class="ti-headphone-alt"></i> Hỗ trợ : (+84) 905 123 456</span>
-                <ul class="nav navbar-right top-nav">
-                    <li>
-                        <a href="#"><i class="ti-marker-alt"></i> Đăng Ký </a>                      
-                    </li>
-                    <li>
-                        <a href="#"><i class="ti-lock"></i> Đăng Nhập </a>                      
-                    </li>
-                    <li>
-                        <a href="#"><i class="ti-shopping-cart"></i><span class="sp-orange">(0)</span> Giỏ Hàng </a>                      
-                    </li>
-                </ul>
-            </div>
-        </header>
-        <!-- /Heading top -->
-        <!-- Navigation -->
-        <div class="container border-btm border-top">
-            <nav class="navbar navbar-style-default " role="navigation">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header col-sm-12 col-md-2">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>SB Admin - Bootstrap Admin Template</title>
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="css/components.css" rel="stylesheet">
+        <link href="css/plugins/slider/style.css" rel="stylesheet"/>
+        
+        <!-- Custom Fonts -->
+        <link href="css/fonts/themify-icons.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <div id="wrapper_page">
+            <!-- Heading top -->
+            <header class="header-style-default">
+                <div class="container">
+                    <span class="text-right header-title"><i class="ti-help-alt"></i> Hỏi Đáp </span>
+                    <span class="text-right header-title"><i class="ti-headphone-alt"></i> Hỗ trợ : (+84) 905 123 456</span>
+                    <ul class="nav navbar-right top-nav">
+                        <li>
+                            <a href="#"><i class="ti-marker-alt"></i> Đăng Ký </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="ti-lock"></i> Đăng Nhập </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="ti-shopping-cart"></i><span class="sp-orange">(0)</span> Giỏ Hàng </a>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+            <!-- /Heading top -->
+            <!-- Navigation -->
+            <div class="container border-btm border-top">
+                <nav class="navbar navbar-style-default " role="navigation">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header col-sm-12 col-md-2">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html"><img title="Thiên đường mua sắm" src="img/header_bar_logo.png"></a>
+                        </button>
+                        <a class="navbar-brand" href="index.html"><img title="Thiên đường mua sắm" src="img/header_bar_logo.png"></a>
+                    </div>
+                    <!-- Top Menu Items -->
+                    <ul class="nav navbar-nav p-t-5 col-md-7">
+                        <li><a href="#">TRANG CHỦ</a></li>
+                        <li><a href="#">GIỚI THIỆU</a></li>
+                        <li><a href="#">ĐÁNH GIÁ</a></li>
+                        <li><a href="#">VỊ TRÍ</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> SẢN PHẨM <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#"> Tạ Đơn</a>
+                                </li>
+                                <li>
+                                    <a href="#"> Tạ Kép</a>
+                                </li>
+                                <li>
+                                    <a href="#"> Máy Đa Năng</a>
+                                </li>
+                                <li>
+                                    <a href="#"> Gế Gập Bụng</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> RAO VẶT <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#"> Tạ Đơn</a>
+                                </li>
+                                <li>
+                                    <a href="#"> Tạ Kép</a>
+                                </li>
+                                <li>
+                                    <a href="#"> Máy Đa Năng</a>
+                                </li>
+                                <li>
+                                    <a href="#"> Gế Gập Bụng</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-left col-md-3" role="search">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search...">
+                            <span class="input-group-addon" id="basic-addon2"> <button type="submit" class="btnSearch"><i class="ti-search"></i></button></span>
+                        </div>
+                    </form>
+                </nav>
+            </div>
+            <div id="page-wrapper">
+                <div class="container-fluid">
+                    <div class="left-sidepage">
+                        <div class="heading-5"><h2>Best Sellers</h2></div>
+                        <div class="left-list-wrap">
+                            <ul class="widget-products">
+                                <li>
+                                    <a href="#">
+                                        <span class="img">
+                                            <img class="img-thumbnail" src="img/slider/1.jpg">
+                                        </span>
+                                        <span class="product clearfix">
+                                            <span class="name">
+                                                Product name 1
+                                            </span>
+                                            <span class="price">
+                                                <i class="ti-money"></i>320,00
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="img">
+                                            <img class="img-thumbnail" src="img/slider/12.jpg">
+                                        </span>
+                                        <span class="product clearfix">
+                                            <span class="name">
+                                                Product name 2
+                                            </span>
+                                            <span class="price">
+                                                <i class="ti-money"></i>273,68
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="img">
+                                            <img class="img-thumbnail" src="img/slider/9.jpg">
+                                        </span>
+                                        <span class="product clearfix">
+                                            <span class="name">
+                                                Product name 3
+                                            </span>
+                                            <span class="price">
+                                                <i class="ti-money"></i>447,29
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="img">
+                                            <img class="img-thumbnail" src="img/slider/5.jpg">
+                                        </span>
+                                        <span class="product clearfix">
+                                            <span class="name">
+                                                Product name 4
+                                            </span>
+                                            <span class="price">
+                                                <i class="ti-money"></i>447,29
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="heading-5"><h2>Product Categories</h2></div>
+                        <div class="left-list-wrap">
+                            <select name="product_cat" class="form-control">
+                                <option value="" selected="selected">Select a category</option>
+                                <option class="level-0" value="category 1">category 1</option>
+                                <option class="level-0" value="category 2">category 2</option>
+                                <option class="level-0" value="category 3">category 3</option>
+                                <option class="level-0" value="category 4">category 4</option>
+                                <option class="level-0" value="category 5">category 5</option>
+                                <option class="level-0" value="category 6">category 6</option>
+                                <option class="level-0" value="category 7">category 7</option>
+                            </select>
+                        </div>
+                        <div class="heading-5"><h2>newest product</h2></div>
+                        <div class="left-list-wrap">
+                          <div class="thumbnail" >                
+                    <img src="img/product/1.jpg" class="img-responsive">
+                    <div class="caption row">
+                        <div class="caption-detail">
+                            <div class="title">
+                                <p>victoria's secret</p>
+                            </div>
+                            <div class="price">                               
+                                <p><i class="ti-money"></i>649.99</p>
+                            </div>
+                        </div>                      
+                        <div class="action-control">                       
+                            <div class="text-center">                            
+                                <button type="button" class="btn-product"><i class="ti-shopping-cart-full"></i> Buy Now
+                                </button>
+                            </div>
+                        </div>
+
+                        <p> </p>
+                    </div>
                 </div>
-                <!-- Top Menu Items -->
-                <ul class="nav navbar-nav p-t-5 col-md-7">
-                    <li><a href="#">TRANG CHỦ</a></li>
-                    <li><a href="#">GIỚI THIỆU</a></li>
-                    <li><a href="#">ĐÁNH GIÁ</a></li>
-                    <li><a href="#">VỊ TRÍ</a></li>
-                    <li class="dropdown">                      
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> SẢN PHẨM <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="#"> Tạ Đơn</a>
-                            </li>
-                            <li>
-                                <a href="#"> Tạ Kép</a>
-                            </li>
-                            <li>
-                                <a href="#"> Máy Đa Năng</a>
-                            </li>                           
-                            <li>
-                                <a href="#"> Gế Gập Bụng</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">                      
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> RAO VẶT <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="#"> Tạ Đơn</a>
-                            </li>
-                            <li>
-                                <a href="#"> Tạ Kép</a>
-                            </li>
-                            <li>
-                                <a href="#"> Máy Đa Năng</a>
-                            </li>                           
-                            <li>
-                                <a href="#"> Gế Gập Bụng</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <form class="navbar-form navbar-left col-md-3" role="search">
-                    <div class="input-group">
-                      <input type="text" class="form-control" placeholder="Search...">
-                      <span class="input-group-addon" id="basic-addon2"> <button type="submit" class="btnSearch"><i class="ti-search"></i></button></span>
-                  </div>                  
-              </form>            
-          </nav>
-      </div>
-      <div id="page-wrapper">
-        <div class="container-fluid">
-		<div id="mi-slider" class="mi-slider">
-					<ul>
-						<li><a href="#"><img src="img/slider/1.jpg" alt="img01"><h4>Boots</h4></a></li>
-						<li><a href="#"><img src="img/slider/2.jpg" alt="img02"><h4>Oxfords</h4></a></li>
-						<li><a href="#"><img src="img/slider/3.jpg" alt="img03"><h4>Loafers</h4></a></li>
-						<li><a href="#"><img src="img/slider/4.jpg" alt="img04"><h4>Sneakers</h4></a></li>
-                        
-					</ul>
-					<ul>
-						<li><a href="#"><img src="img/slider/5.jpg" alt="img05"><h4>Belts</h4></a></li>
-						<li><a href="#"><img src="img/slider/6.jpg" alt="img06"><h4>Hats &amp; Caps</h4></a></li>
-						<li><a href="#"><img src="img/slider/7.jpg" alt="img07"><h4>Sunglasses</h4></a></li>
-						<li><a href="#"><img src="img/slider/8.jpg" alt="img08"><h4>Scarves</h4></a></li>
-					</ul>
-					<ul>
-						<li><a href="#"><img src="img/slider/9.jpg" alt="img09"><h4>Casual</h4></a></li>
-						<li><a href="#"><img src="img/slider/10.jpg" alt="img10"><h4>Luxury</h4></a></li>
-						<li><a href="#"><img src="img/slider/11.jpg" alt="img11"><h4>Sport</h4></a></li>
-					</ul>
-					<ul>
-						<li><a href="#"><img src="img/slider/12.jpg" alt="img12"><h4>Carry-Ons</h4></a></li>
-						<li><a href="#"><img src="img/slider/13.jpg" alt="img13"><h4>Duffel Bags</h4></a></li>
-						<li><a href="#"><img src="img/slider/14.jpg" alt="img14"><h4>Laptop Bags</h4></a></li>
-						<li><a href="#"><img src="img/slider/15.jpg" alt="img15"><h4>Briefcases</h4></a></li>
-					</ul>
-					<nav>
-						<a href="#">Shoes</a>
-						<a href="#">Accessories</a>
-						<a href="#">Watches</a>
-						<a href="#">Bags</a>
-					</nav>
-				</div>
+                        </div>
+                        <div class="heading-5"><h2>announcement</h2></div>
+                        <div class="left-list-wrap">
+                           <div class="quote-content">
+                            <i class="ti-quote-left"></i>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque bibendum sapien eu lacus semper, eu tristique nulla placerat. Sed sed elementum erat, eget ornare sapien. Praesent dolor libero, viverra nec risus nec, venenatis euismod velit. Etiam gravida nunc in tempor mattis</p>
+                            <i class="ti-quote-right"></i>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="right-sidepage">
+                        <div id="mi-slider" class="mi-slider">
+                            <ul>
+                                <li><a href="#"><img src="img/slider/1.jpg" alt="img01"><h4>Boots</h4></a></li>
+                                <li><a href="#"><img src="img/slider/2.jpg" alt="img02"><h4>Oxfords</h4></a></li>
+                                <li><a href="#"><img src="img/slider/3.jpg" alt="img03"><h4>Loafers</h4></a></li>
+                                <li><a href="#"><img src="img/slider/4.jpg" alt="img04"><h4>Sneakers</h4></a></li>
+                                
+                            </ul>
+                            <ul>
+                                <li><a href="#"><img src="img/slider/5.jpg" alt="img05"><h4>Belts</h4></a></li>
+                                <li><a href="#"><img src="img/slider/6.jpg" alt="img06"><h4>Hats &amp; Caps</h4></a></li>
+                                <li><a href="#"><img src="img/slider/7.jpg" alt="img07"><h4>Sunglasses</h4></a></li>
+                                <li><a href="#"><img src="img/slider/8.jpg" alt="img08"><h4>Scarves</h4></a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#"><img src="img/slider/9.jpg" alt="img09"><h4>Casual</h4></a></li>
+                                <li><a href="#"><img src="img/slider/10.jpg" alt="img10"><h4>Luxury</h4></a></li>
+                                <li><a href="#"><img src="img/slider/11.jpg" alt="img11"><h4>Sport</h4></a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#"><img src="img/slider/12.jpg" alt="img12"><h4>Carry-Ons</h4></a></li>
+                                <li><a href="#"><img src="img/slider/13.jpg" alt="img13"><h4>Duffel Bags</h4></a></li>
+                                <li><a href="#"><img src="img/slider/14.jpg" alt="img14"><h4>Laptop Bags</h4></a></li>
+                                <li><a href="#"><img src="img/slider/15.jpg" alt="img15"><h4>Briefcases</h4></a></li>
+                            </ul>
+                            <nav>
+                                <a href="#">Shoes</a>
+                                <a href="#">Accessories</a>
+                                <a href="#">Watches</a>
+                                <a href="#">Bags</a>
+                            </nav>
+                        </div>
+                        <div class="heading-3">
+                            <h2>Products</h2>
+                        </div>
+
+                         <div class="col-sm-4 no-p-left">
+                            <div class="col-item">
+                                <div class="photo">
+                                    <img src="img/product/2.jpg" class="img-responsive" alt="a" />
+                                </div>
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="price col-md-12">
+                                            <h5 class="title-product">
+                                                Sample Product</h5>
+                                            <h5 class="price-text-color">
+                                                <i class="ti-money"></i>649.99</h5>
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="separator clear-left control-product">
+                                        <p class="btn-add">
+                                            <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm"><i class="ti-shopping-cart"></i>Add to cart</a></p>
+                                        <p class="btn-details">
+                                            <i class="fa fa-list"></i><a href="#" class="hidden-sm"><i class="ti-eye"></i>More details</a></p>
+                                    </div>
+                                    <div class="clearfix">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                         <div class="col-sm-4 no-p-left">
+                            <div class="col-item">
+                                <div class="photo">
+                                    <img src="img/product/4.jpg" class="img-responsive" alt="a" />
+                                </div>
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="price col-md-12">
+                                            <h5 class="title-product">
+                                                Sample Product</h5>
+                                            <h5 class="price-text-color">
+                                                <i class="ti-money"></i>649.99</h5>
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="separator clear-left control-product">
+                                        <p class="btn-add">
+                                            <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm"><i class="ti-shopping-cart"></i>Add to cart</a></p>
+                                        <p class="btn-details">
+                                            <i class="fa fa-list"></i><a href="#" class="hidden-sm"><i class="ti-eye"></i>More details</a></p>
+                                    </div>
+                                    <div class="clearfix">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col-sm-4 no-p-left">
+                            <div class="col-item">
+                                <div class="photo">
+                                    <img src="img/product/1.jpg" class="img-responsive" alt="a" />
+                                </div>
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="price col-md-12">
+                                            <h5 class="title-product">
+                                                Sample Product</h5>
+                                            <h5 class="price-text-color">
+                                                <i class="ti-money"></i>649.99</h5>
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="separator clear-left control-product">
+                                        <p class="btn-add">
+                                            <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm"><i class="ti-shopping-cart"></i>Add to cart</a></p>
+                                        <p class="btn-details">
+                                            <i class="fa fa-list"></i><a href="#" class="hidden-sm"><i class="ti-eye"></i>More details</a></p>
+                                    </div>
+                                    <div class="clearfix">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col-sm-4 no-p-left">
+                            <div class="col-item">
+                                <div class="photo">
+                                    <img src="img/product/3.jpg" class="img-responsive" alt="a" />
+                                </div>
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="price col-md-12">
+                                            <h5 class="title-product">
+                                                Sample Product</h5>
+                                            <h5 class="price-text-color">
+                                                <i class="ti-money"></i>649.99</h5>
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="separator clear-left control-product">
+                                        <p class="btn-add">
+                                            <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm"><i class="ti-shopping-cart"></i>Add to cart</a></p>
+                                        <p class="btn-details">
+                                            <i class="fa fa-list"></i><a href="#" class="hidden-sm"><i class="ti-eye"></i>More details</a></p>
+                                    </div>
+                                    <div class="clearfix">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- /.container-fluid -->
+            </div>
+            <!-- /#page-wrapper -->
         </div>
-        <!-- /.container-fluid -->
-    </div>
-    <!-- /#page-wrapper -->
-</div>
-<!-- /#wrapper -->
-<!-- jQuery -->
-<script src="js/jquery.js"></script>
-<!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
-<!-- Custom scripts -->
-<script src="js/plugins/slider/modernizr.custom.63321.js"></script>
-<script src="js/plugins/slider/jquery.catslider.js"></script>
-<script>
-			$(function() {
-
-				$( '#mi-slider' ).catslider();
-
-			});
-		</script>
-		
-</body>
+        <!-- /#wrapper -->
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Custom scripts -->
+        <script src="js/plugins/slider/modernizr.custom.63321.js"></script>
+        <script src="js/plugins/slider/jquery.catslider.js"></script>
+        <script>
+        $(function() {
+        $( '#mi-slider' ).catslider();
+        });
+        </script>
+    </body>
 </html>
